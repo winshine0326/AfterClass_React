@@ -1,6 +1,6 @@
 import './Comment.css';
 import { useState } from 'react';
-function Comment() {
+function Comment(props) {
     const [good,setGood] = useState(0);
     const [bad,setBad] = useState(0);
     return (
