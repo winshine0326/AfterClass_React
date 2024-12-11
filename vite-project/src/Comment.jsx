@@ -10,15 +10,14 @@ function Comment(props) {
             </div>
             <div className="contentContainer">
                 <span className="nameText">
-                    안녕하세요. 댓글 만들고 있어요.
-                    {/* {props.name} */}
+                    {props.name}
                 </span>
                 <span className="okText">
                     <span onClick={()=>setGood(good+1)}>👍</span> {good}&nbsp;&nbsp;
                     <span onClick={()=>setBad(bad+1)}>👎</span>{bad}
                 </span>
 
-                {/* <span className='commentText'>{props.comment}</span> */}
+                <span className='commentText'>{props.comment}</span>
             </div>
         </div>
     );
